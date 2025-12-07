@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  topic-modeling:
+    lang: python3-http-debian
+    handler: ./topic-modeling
+    image: ghcr.io/binbhutto/p1-topic-modeling:latest
+

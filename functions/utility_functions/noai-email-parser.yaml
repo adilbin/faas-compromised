@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  noai-email-parser:
+    lang: python3-http-debian
+    handler: ./noai-email-parser
+    image: ghcr.io/binbhutto/p1-noai-email-parser:latest
+

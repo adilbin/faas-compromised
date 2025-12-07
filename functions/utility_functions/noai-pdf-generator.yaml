@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  noai-pdf-generator:
+    lang: python3-http-debian
+    handler: ./noai-pdf-generator
+    image: ghcr.io/binbhutto/p1-noai-pdf-generator:latest
+

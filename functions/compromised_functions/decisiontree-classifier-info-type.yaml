@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  decisiontree-classifier-info-type:
+    lang: python3-http-debian
+    handler: ./decisiontree-classifier-info-type
+    image: ghcr.io/binbhutto/p1-decisiontree-classifier-info-type:latest
+

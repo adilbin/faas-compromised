@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  kmeans-clustering-info-type:
+    lang: python3-http-debian
+    handler: ./kmeans-clustering-info-type
+    image: ghcr.io/binbhutto/p1-kmeans-clustering-info-type:latest
+
