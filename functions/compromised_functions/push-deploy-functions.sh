@@ -11,10 +11,10 @@ set -e  # Exit on error
 FUNCTIONS=(
     decisiontree-classifier-fileop-type
     decisiontree-classifier-info-type
-    kmeans-clustering-code-type
-    kmeans-clustering-command-type
-    kmeans-clustering-fileop-type
-    kmeans-clustering-info-type
+    # kmeans-clustering-code-type
+    # kmeans-clustering-command-type
+    # kmeans-clustering-fileop-type
+    # kmeans-clustering-info-type
     time-series-forecaster-code-type
     time-series-forecaster-command-type
     time-series-forecaster-fileop-type

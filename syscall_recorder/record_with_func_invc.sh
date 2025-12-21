@@ -30,7 +30,7 @@ get_payload() {
     sentiment-analyzer)
       echo '{"text":"This product is amazing! I love it."}'
       ;;
-    time-series-forecaster)
+    time-series-forecaster|time-series-forecaster-info-type|time-series-forecaster-code-type|time-series-forecaster-command-type|time-series-forecaster-fileop-type)
       echo '{"series":[10,12,15,14,18,21,23,25],"forecast_steps":5,"degree":1}'
       ;;
     kmeans-clustering|kmeans-clustering-info-type|kmeans-clustering-code-type|kmeans-clustering-command-type|kmeans-clustering-fileop-type)
@@ -39,7 +39,7 @@ get_payload() {
     naivebayes-classifier)
       echo '{"operation":"train","texts":["This is a positive review","Great product, highly recommended","Terrible experience, waste of money","Not satisfied with the quality","Amazing service and fast delivery"],"labels":["positive","positive","negative","negative","positive"],"model_id":"sentiment_model","vectorizer_type":"tfidf"}'
       ;;
-    decisiontree-classifier)
+    decisiontree-classifier|decisiontree-classifier-info-type|decisiontree-classifier-fileop-type)
       echo '{"operation":"train","X":[[5.1,3.5,1.4,0.2],[4.9,3.0,1.4,0.2],[7.0,3.2,4.7,1.4],[6.4,3.2,4.5,1.5],[6.3,3.3,6.0,2.5],[5.8,2.7,5.1,1.9]],"y":["setosa","setosa","versicolor","versicolor","virginica","virginica"],"model_id":"iris_model","max_depth":3}'
       ;;
     linear-regression)
