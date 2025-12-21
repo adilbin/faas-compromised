@@ -20,9 +20,9 @@ Based on [academic research](https://sites.google.com/view/pypiempircal) on mali
 ## Repository Structure
 
 ```
-├── functions/                  # OpenFaaS function definitions
-│   ├── utility_functions/      # 25 benign functions (AI & non-AI)
-│   └── compromised_functions/  # 20 compromised variants (4 attack types)
+├── functions/                  # 30 OpenFaaS function definitions
+│   ├── utility_functions/      # 20 benign functions (AI & non-AI)
+│   └── compromised_functions/  # 10 compromised variants (4 attack types)
 ├── src/                        # Source code for function handlers
 ├── syscall_recorder/           # Scripts to record syscalls using traceloop
 ├── dataset/                    # Collected syscall data
